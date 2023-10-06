@@ -1,20 +1,20 @@
-package = "lualoggingapender"
+package = "MoonGLFW"
 version = "1.0-1"
 source = {
     url = "",
 }
 description = {
-   summary = "An example for the LuaRocks tutorial.",
+   summary = "Forkedb for lua Rocks",
    detailed = [[
       This is an example for the LuaRocks tutorial.
       Here we would put a detailed, typically
       paragraph-long description.
    ]],
    homepage = "http://...", -- We don't have one yet
-   license = "MIT/X11" -- or whatever you like
+   license = "MIT" -- or whatever you like
 }
 dependencies = {
-   "lua ~> 5.1"
+   "lua ~> 5.3"
    -- If you depend on other rocks, add them here
 }
 build = {
@@ -28,7 +28,7 @@ build = {
     MAC = {
       type = "make",
       build_variables = {
-        LUA_DIR = "$(LUA_LIBDIR)lib/lib.dll",
+        LUA_DIR = "$(LUA_LIBDIR)src/moonGlfw.dylib",
       }
     }
   }
